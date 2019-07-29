@@ -44,7 +44,7 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
   
   end
   control 'V-75489' do
-  
+    tag "nist": ["AC-6 (10)", "Rev_4"]
   end
   control 'V-75491' do
   
@@ -72,10 +72,10 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
          security control is not included in CMS ARS 3.1'
   end
   control 'V-75555' do
-  
+    tag "nist": ["AC-3", "Rev_4"]
   end
   control 'V-75557' do
-  
+    tag "nist": ["AC-3", "Rev_4"]
   end
   control 'V-75605' do
     impact 0
