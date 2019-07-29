@@ -9,7 +9,9 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
   
   end
   control 'V-75445' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75449' do
   
@@ -60,10 +62,14 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
   
   end
   control 'V-75529' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75553' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75555' do
   
@@ -72,34 +78,52 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
   
   end
   control 'V-75605' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75607' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75609' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75611' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75613' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75615' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75623' do
   
   end
   control 'V-75631' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75633' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75659' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75709' do
   
@@ -156,7 +180,9 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
   
   end
   control 'V-75859' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75863' do
   
@@ -165,7 +191,9 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
   
   end
   control 'V-75869' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
   control 'V-75903' do
   
@@ -192,6 +220,8 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
   
   end
   control 'V-80965' do
-  
+    impact 0
+    desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
+         security control is not included in CMS ARS 3.1'
   end
 end
