@@ -306,7 +306,7 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
     desc "fix", "If an emergency account must be created configure the system to
     terminate the account after a 24 hour time period with the following command to set an expiration date on it. Substitute \"system_account_name\" with the account to be created.
     
-    # sudo chage -E `date -d "+1 days" +%Y-%m-%d` system_account_name"
+    # sudo chage -E `date -d \"+1 days\" +%Y-%m-%d` system_account_name"
   end
   control 'V-75475' do
     title "Passwords must be prohibited from reuse for a minimum of twelve

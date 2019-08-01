@@ -34,7 +34,7 @@ git clone https://github.cms.gov/ISPG/cms-ars-3.1-high-canonical-ubuntu-16.04-lt
 cd cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay
 bundle install
 cd ..
-inspec exec cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay --attrs=cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay/static-attributes.yml [-t <transport_protocol>://<hostname>:<port> --user=<username> --password=<password>] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay --input-file cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay/static-inputs.yml [-t <transport_protocol>://<hostname>:<port> --user=<username> --password=<password>] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 For every successive run, follow these steps to always have the latest version of this overlay and dependent profiles:
 
@@ -45,7 +45,7 @@ cd ../cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay
 git pull
 bundle install
 cd ..
-inspec exec cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay --attrs=cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay/static-attributes.yml [-t <transport_protocol>://<hostname>:<port> --user=<username> --password=<password>] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay --input-file cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay/static-inputs.yml [-t <transport_protocol>://<hostname>:<port> --user=<username> --password=<password>] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 
 ## Viewing the JSON Results

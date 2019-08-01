@@ -1,2 +1,5 @@
 #Ignore temporary Office files
 ~$*
+
+#lock files
+*.lock
