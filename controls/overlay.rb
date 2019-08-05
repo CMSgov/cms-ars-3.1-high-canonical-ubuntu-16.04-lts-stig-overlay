@@ -206,7 +206,7 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
     \"/etc/security/pwquality.conf\" file with the following command:
     
     # grep -i \"ocredit\" /etc/security/pwquality.conf
-    ocredit=-31
+    ocredit=-3
     
     If the \"ocredit\" parameter is not equal to \"-3\", or is commented out, this
     is a finding."
