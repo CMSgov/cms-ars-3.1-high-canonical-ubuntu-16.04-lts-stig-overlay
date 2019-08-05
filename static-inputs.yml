@@ -12,10 +12,8 @@ min_num_uppercase_char: -3
 min_num_numeric_char: -3
 min_num_special_char: -3
 min_num_characters_to_change: 12
-emergency_accounts: []
 min_num_password_generations: 12
 max_account_inactive_days: 30
-temporary_accounts: []
 client_alive_interval: 1800
 client_alive_count_max: 0
 space_left_percent: 20
