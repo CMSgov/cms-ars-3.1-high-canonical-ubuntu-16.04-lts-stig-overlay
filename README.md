@@ -13,16 +13,49 @@ Latest versions and installation options are available at the [InSpec](http://in
 
 Git is required to download the latest InSpec profiles using the instructions below. Git can be downloaded from the [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) site. 
 
-##TODO - NEEDS TO BE UPDATED
-__START-OPTIONAL-ATTRIBUTES-TEXT__<br/>
-The following attributes must be configured in an attributes file for the profile to run correctly. More information about InSpec attributes can be found in the [InSpec Profile Documentation](https://www.inspec.io/docs/reference/profiles/).
+The following inputs must be configured in inspec.yml for the profile to run correctly. More information about InSpec inpputs can be found in the [InSpec Profile Documentation](https://www.inspec.io/docs/reference/profiles/).
 
 ```
-# Attribute description
-attribute_name: 'value'
-```
-__END-OPTIONAL-ATTRIBUTES-TEXT__
+  - name: emergency_accounts
+    description: Emergency user accounts
+    type: Array
+    value: []
 
+  - name: temporary_accounts
+    description: Temporary user accounts
+    type: Array
+    value: []
+
+  - name: application_groups
+    description: Known Application Groups
+    type: Array
+    value: []
+
+  - name: known_system_accounts
+    description: System accounts that support approved system activities
+    type: Array
+    value: []
+
+  - name: disallowed_accounts
+    description: Accounts that are not allowed on the system
+    type: Array
+    value: []
+
+  - name: user_accounts
+    description: Accounts of known managed users
+    type: Array
+    value: []
+
+  - name: exempt_home_users
+    description: These are `home dir` exempt interactive accounts
+    type: Array
+    value: []
+
+  - name: security_accounts
+    description: Security Personnel accounts
+    type: Array
+    value: []
+```
 ## Running This Overlay
 When the __"runner"__ host uses this profile overlay for the first time, follow these steps: 
 
@@ -34,7 +67,7 @@ git clone https://github.cms.gov/ISPG/cms-ars-3.1-high-canonical-ubuntu-16.04-lt
 cd cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay
 bundle install
 cd ..
-inspec exec cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay --input-file cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay/static-inputs.yml [-t <transport_protocol>://<hostname>:<port> --user=<username> --password=<password>] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay --input-file cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay/static-inputs.yml [-t ssh://<hostname>:<port> --sudo] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 For every successive run, follow these steps to always have the latest version of this overlay and dependent profiles:
 
@@ -45,7 +78,7 @@ cd ../cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay
 git pull
 bundle install
 cd ..
-inspec exec cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay --input-file cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay/static-inputs.yml [-t <transport_protocol>://<hostname>:<port> --user=<username> --password=<password>] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay --input-file cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay/static-inputs.yml [-t ssh://<hostname>:<port> --sudo] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 
 ## Viewing the JSON Results
