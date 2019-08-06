@@ -461,6 +461,9 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
         There may be shared resources with configurable protections (e.g., files in
     storage) that may be assessed on specific information system components."
   end
+  control 'V-75689' do
+    tag "nist": ["SI-6 d", "CM-3 (5)", "Rev_4"]
+  end
   control 'V-75527' do
     desc "Changes to any software components can have significant effects on the
     overall security of the Ubuntu operating system. This requirement ensures the
@@ -485,6 +488,9 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
     impact 0
     desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
          security control is not included in CMS ARS 3.1'
+  end
+  control 'V-75535' do
+    tag "nist": ["AC-6 (10)", "AC-3 (4)", "Rev_4"]
   end
   control 'V-75553' do
     impact 0
@@ -594,6 +600,9 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
     impact 0
     desc 'caveat', 'Not applicable for this CMS ARS 3.1 overlay, since the related                                                      
          security control is not included in CMS ARS 3.1'
+  end
+  control 'V-75689' do
+    tag "nist": ["AC-6 (9)", "AC-6 (8)", "Rev_4"]
   end
   control 'V-75709' do
     desc "Without the capability to generate audit records, it would be
