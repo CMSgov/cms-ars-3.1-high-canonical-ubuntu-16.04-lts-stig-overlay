@@ -461,7 +461,7 @@ include_controls 'canonical-ubuntu-16.04-lts-stig-baseline' do
         There may be shared resources with configurable protections (e.g., files in
     storage) that may be assessed on specific information system components."
   end
-  control 'V-75689' do
+  control 'V-75523' do
     tag "nist": ["SI-6 d", "CM-3 (5)", "Rev_4"]
   end
   control 'V-75527' do
