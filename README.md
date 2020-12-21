@@ -58,7 +58,7 @@ The following inputs must be configured in an inputs ".yml" file for the profile
 
 ```
 # How to run
-inspec exec https://github.com/CMSgov/cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay/archive/master.tar.gz --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> [-t ssh://<hostname>:<port> --sudo] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec https://github.com/CMSgov/cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay/archive/master.tar.gz --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> -t ssh://<hostname>:<port> --sudo --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 
 ### Different Run Options
@@ -78,7 +78,7 @@ mkdir profiles
 cd profiles
 git clone https://github.com/CMSgov/cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay.git
 inspec archive cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay
-inspec exec <name of generated archive> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> [-t ssh://<hostname>:<port> --sudo] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec <name of generated archive> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> -t ssh://<hostname>:<port> --sudo --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 For every successive run, follow these steps to always have the latest version of this overlay and dependent profiles:
 
@@ -87,7 +87,7 @@ cd cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay
 git pull
 cd ..
 inspec archive cms-ars-3.1-high-canonical-ubuntu-16.04-lts-stig-overlay --overwrite
-inspec exec <name of generated archive> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> [-t ssh://<hostname>:<port> --sudo] --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec <name of generated archive> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> -t ssh://<hostname>:<port> --sudo --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 
 ## Using Heimdall for Viewing the JSON Results
