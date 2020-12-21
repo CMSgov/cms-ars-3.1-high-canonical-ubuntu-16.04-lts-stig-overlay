@@ -52,3 +52,74 @@ inputs:
     description: Security Personnel accounts
     type: Array
     value: []
+
+  - name: maxlogins
+    description: Maximum number of concurrent sessions
+    type: Numeric
+    value: 1
+
+  - name: min_num_uppercase_char
+    description: Minimum number of upper case characters needed in a password (Denoted in negative numbers)
+    type: Numeric
+    value: -3
+
+  - name: min_num_lowercase_char
+    description: Minimum number of lower case characters needed in a password (Denoted in negative numbers)
+    type: Numeric
+    value: -3
+
+  - name: min_num_numeric_char
+    description: Minimum number of numeric characters needed in a password (Denoted in negative numbers)
+    type: Numeric
+    value: -3
+
+  - name: min_num_special_char
+    description: Minimum number of special characters needed in a password (Denoted in negative numbers)
+    type: Numeric
+    value: -3
+
+  - name: min_num_characters_to_change
+    description: Minimum number of characters that need to be changed for password rotation
+    type: Numeric
+    value: 12
+
+  - name: min_num_password_generations
+    description: Minimum number of passwords to remember
+    type: Numeric
+    value: 12
+
+  - name: max_account_inactive_days
+    description: Maximum number of days an account can remain inactive
+    type: Numeric
+    value: 30
+
+  - name: client_alive_interval
+    description: Client Alive Interval
+    type: Numeric
+    value: 1800
+
+  - name: client_alive_count_max
+    description: Client Alive Interval
+    type: Numeric
+    value: 0
+
+  - name: space_left_percent
+    description: Audit space storage remaining (percentage)
+    type: Numeric
+    value: 20
+
+  - name: org_name
+    description: Organization Name
+    type: String
+    value: 'CMS'
+
+  - name: banner_text
+    description: Standard Mandatory CMS Notice and Consent Banner
+    type: String
+    value: '* This warning banner provides privacy and security notices consistent with applicable federal laws, directives, and other federal guidance for accessing this Government system, which includes (1) this computer network, (2) all computers connected to this network, and (3) all devices and storage media attached to this network or to a computer on this network.
+    * This system is provided for Government authorized use only.
+    * Unauthorized or improper use of this system is prohibited and may result in disciplinary action and/or civil and criminal penalties.
+    * Personal use of social media and networking sites on this system is limited as to not interfere with official work duties and is subject to monitoring.
+    * By using this system, you understand and consent to the following:
+    - The Government may monitor, record, and audit your system usage, including usage of personal devices and email systems for official duties or to conduct HHS business. Therefore, you have no reasonable expectation of privacy regarding any communication or data transiting or stored on this system. At any time, and for any lawful Government purpose, the government may monitor, intercept, and search and seize any communication or data transiting or stored on this system.
+    - Any communication or data transiting or stored on this system may be disclosed or used for any lawful Government purpose'
